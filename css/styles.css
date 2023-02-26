@@ -414,8 +414,7 @@ h6 {
   background-color: var(--color-background-social);
   border-radius: 50%;
   fill: var(--color-light);
-  transition: fill var(--transition),
-    background-color var(--transition);
+  transition: background-color var(--transition);
 }
 
 .footer-social-link:hover,
@@ -512,8 +511,8 @@ h6 {
   overflow: hidden;
 }
 
-.portfolio-overlay:hover .portfolio-description,
-.portfolio-overlay:focus .portfolio-description {
+.portfolio-link:hover .portfolio-description,
+.portfolio-link:focus .portfolio-description {
   transform: translateY(0);
 }
 
@@ -602,13 +601,20 @@ h6 {
   background-color: var(--color-accent);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: background-color var(--transition),
-    color var(--transition);
+  fill: #000;
+  transition: background-color var(--transition), fill var(--transition);
   cursor: pointer;
 }
+
+.modal-close:hover,
+.modal-close:focus {
+    background-color: var(--color-pressed-state);
+    fill: var(--color-white);
+}
+
 .modal-icon {
   width: 8px;
   height: 8px;
-  fill: #000;
+  
   transition: fill var(--transition);
 }
