@@ -580,6 +580,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  padding: 72px 24px 24px 24px;
   width: 408px;
   min-height: 584px;
   opacity: 1;
@@ -623,9 +624,6 @@ img {
   height: 8px;
   transition: fill var(--transition);
 }
-.form-container {
-  padding: 72px 24px 24px 24px;
-}
 .form-text {
   margin-bottom: 16px;
   font-size: 16px;
@@ -649,7 +647,7 @@ img {
   color: var(--subtle-text);
 }
 .form-input {
-  width:100%;
+  width: 100%;
   padding: 11px 38px;
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal);
